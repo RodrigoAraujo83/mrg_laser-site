@@ -1,0 +1,369 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: #ddd;
+}
+div#principal{
+    position: absolute;
+    margin-left: 200px;
+    background-color: #fff;
+    width: 980px;
+    box-shadow: 2px 2px 4px rgba(0,0,0.6);
+    height: 2900px;
+}
+header#cabecalho{
+    background: linear-gradient(45deg, #777, #eee, #ddd);
+    height: 110px;
+    text-align: center;
+    box-shadow: 0px 1px 3px black;
+
+}
+header h1{
+    display: block;
+    float: left;
+    color: rgba(151, 161, 165, 0.788);
+    font-family: 'Lemonada', cursive;
+    font-size: 46px;
+    padding: 15px;
+    text-shadow: 5px 5px 3px rgba(0,0,0,.8);
+}
+header h1 span{
+    font-size: 50px;
+    color: #495863;
+}
+header h2{
+    display: none;
+}
+ul{
+    position: absolute;
+    display: flex;
+    left: 580px;
+    top: -22px;
+    margin-right: 25px;
+    padding: 10px;
+}
+li{
+    text-decoration: none;
+    display: inline-block;
+    padding: 2px;
+    margin: 1px 20px 10px 20px;
+    font-family: 'Lemonada', cursive;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(47, 61, 105);
+}
+li:hover{
+    background-color: #777;
+    border-radius: 20%;
+    color: #eee;
+}
+article#conteudo{
+    padding: 3px;
+    position: relative;
+    display: block;
+    margin: auto;
+    font-size: 1em;
+    width: 100%;
+    justify-content: center;
+    text-indent: 5px;
+    height: 310px;
+}
+article p::first-letter{
+    font-size: 20px;
+}
+article#conteudo h1{
+    font-family: 'Lemonada', cursive;
+    background-image: linear-gradient( to left,rgba(235, 233, 233,.9), gray);
+    margin-bottom: 5px;
+    text-align-last: center;
+    margin-right: 6px;
+}
+article#conteudo{
+    font-size: 14pt;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+div#galeria{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 520px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: -5px;
+    background-color: #d5d5d5;
+}
+div.foto{
+    display:  inline-block;
+    box-shadow: 2px 2px 3px rgba(0,0,0.6);
+    margin: 5px auto 5px auto;
+    padding: 5px;
+    width: 300px;
+    height: 237px
+}
+div#galeria img:hover{
+    transform: scale(1.3);
+}
+div#galeria img{
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 300px;
+    height: 230px;
+}
+div#video{
+    position: relative;
+    left:auto;
+    top: 1px;
+    padding: 5px;
+    margin: auto;
+    border: 1px solid #eee;
+    width: 100%px;
+    height: 427px;
+    box-shadow: 1px 1px rgba(0,0,0,.6);
+    background-color: #777;
+}
+iframe#tube{
+    position: relative;
+    left: 8px;
+
+
+}
+section{
+    display: block;
+    position: relative;
+    width: 980px;
+    margin-top: 3px;
+  
+    
+}
+div#dica{
+position: relative;
+top: 60px;
+display: block;
+}
+div#dica h1{
+    display: block;
+    font-family: 'Lemonada', cursive;;
+    text-align: center;
+}
+/* Style the tab buttons */
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    font-family:'Lemonada', cursive;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 14px;
+    width: 25%;
+    box-shadow: 0px 2px 3px rgba(0,0,0.6);
+  }
+  /* Change background color of buttons on hover */
+.tablink:hover {
+    background-color: #777;
+    text-decoration: underline;
+  }
+  
+  /* Set default styles for tab content */
+  .tabcontent {
+    font-family: 'Lemonada', cursive;
+    border: none;
+    font-size: 13pt;
+    color: rgba(106, 194, 34, 0.808);
+    font-weight: bolder;
+    display: none;
+    padding: 50px;
+    text-align: center;
+  }
+  .tabcontent h2{
+      text-shadow: 1px 1px 2px white;
+  }
+  
+  /* Style each tab content individually */
+  #London {background: url(../imagens/tabua_fundo.jpg) no-repeat;}
+  #Paris {background: url(../imagens/quadro_fundo.jpg) no-repeat;}
+  #Tokyo {background: url(../imagens/barber_fundo.jpg);}
+  #Oslo {background: url(../imagens/churras_fundo.jpg) no-repeat;}
+
+  div#social{
+      display: flex;
+      position: relative;
+      margin: 0;
+      padding: 0;
+      box-shadow: 0px -2px 1px rgba(0,0,0.6);
+      top: 1420px;
+  }
+  div#recados{
+      position: absolute;
+      width:980px;
+      height: 830px;
+      top: 1140px;
+      background: linear-gradient(45deg, #777, #eee, #ddd);
+  }
+  div#recados h1{
+      background-color: #ddd;
+  }
+  div#dicaa{
+      display: block;
+      position: relative;
+      font-size: 12pt;
+      text-shadow: 1px 1px 1px rgba(0,0,0,0.232);
+      letter-spacing: -1.3px;
+      text-align: center;
+      line-height: 20px;
+      font-family: 'Lemonada', cursive;
+      width: 430px;
+      top: 20px;
+      height: 130px;
+      margin: 15px 10px 15px 10px;
+      padding: 12px;
+      box-shadow: 2px 2px 4px rgba(0,0,0.3);
+      
+  }
+  div#dicab{
+    font-size: 12pt;
+    letter-spacing: -1.3px;
+    box-shadow: 2px 2px 3px rgba(0,0,0.3);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.232);
+    letter-spacing: -1.3px;
+    text-align: center;
+    line-height: 20px;
+    text-align: center;
+    font-family: 'Lemonada', cursive;
+    display: block;
+    position: relative;
+    left: 499px;
+    top: -152px;
+    width: 430px;
+    height: 135px;
+    margin: 15px 10px 15px 10px;
+    padding: 12px;
+    
+    
+}
+div#dicac{
+    font-size: 12pt;
+    letter-spacing: -1.3px;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.232);
+    letter-spacing: -1.3px;
+    text-align: center;
+    line-height: 20px;
+    font-family: 'Lemonada', cursive;
+    box-shadow: 2px 2px 3px rgba(0,0,0.3);
+    display: block;
+    position: relative;
+    left: 499px;
+    top: -150px;
+    width: 430px;
+    height: 155px;
+    margin: 15px 10px 15px 10px;
+    padding: 12px;
+    
+    
+}
+div#dicad{
+    display: block;
+    position: relative;
+    font-size: 12pt;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.232);
+    letter-spacing: -1.3px;
+    text-align: center;
+    line-height: 20px;
+    letter-spacing: -1.3px;
+    box-shadow: 2px 2px 3px rgba(0,0,0.3);
+    text-align: center;
+    font-family: 'Lemonada', cursive;
+    left: 2px;
+    top: -347px;
+    width: 430px;
+    height: 100px;
+    margin: 15px 10px 15px 10px;
+    padding: 12px;
+    
+    
+}
+div#dicae{
+    display: block;
+    position: relative;
+    font-size: 12pt;
+    letter-spacing: -1.3px;
+    text-align: center;
+    font-family: 'Lemonada', cursive;
+    box-shadow: 2px 2px 3px rgba(0,0,0.3);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.232);
+    letter-spacing: -1.3px;
+    text-align: center;
+    line-height: 20px;
+    left: 240px;
+    top: -260px;
+    width: 430px;
+    height: 175px;
+    margin: 15px 10px 15px 10px;
+    padding: 12px;
+    
+    
+}
+footer#rodape{
+    position: absolute;
+    width: 980px;
+    top: 1100px;
+}
+
+footer#rodape p{
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 5px;
+    margin-top: 82px;
+    margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0,0,0,.8);
+}
+  /*Redes Sociais*/
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 20px;
+    top: 840px;
+    text-align: center;
+    text-decoration: none;
+    margin: 15px 8px;
+    border-radius: 50%;
+    margin-left: 30px;
+    margin-top: 25px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+      box-shadow: 5px 3px rgba(0,0,0.3);
+  }
+  
+  .fa-facebook {
+    background: rgba(0,0,0,0.6);
+    color: white;
+
+  }
+  
+ .fa-google {
+    background: rgba(0,0,0,0.6);
+    color: white;
+   
+  }
+  
+ .fa-youtube {
+    background: rgba(0,0,0,0.6);
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: rgba(0,0,0,0.6);
+    color: white;
+  }
+  
+  
