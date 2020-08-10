@@ -2,28 +2,52 @@
     padding: 0px;
     margin: 0px;
 }
-body{
-    background-color: #ddd;
-}
 div#principal{
     position: absolute;
     margin-left: 200px;
     background-color: #fff;
-    width: 980px;
+    width: 982px;
     box-shadow: 2px 2px 4px rgba(0,0,0.6);
-    height: 2900px;
+    height: 2678px;
 }
 header#cabecalho{
-    background: linear-gradient(45deg, #777, #eee, #ddd);
-    height: 110px;
+    background: linear-gradient(0deg, rgba(34,193,195,0.5) 0%, rgba(253,187,45,1) 100%);
+    height: 115px;
     text-align: center;
     box-shadow: 0px 1px 3px black;
 
 }
+div#logomarca{
+    position: absolute;
+    top: 5px;
+    margin: 20px;
+    width: 200px;
+    height: 100px;
+}
+#marca{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 170px;
+    height: 100px;
+}
+div#icone{
+    position: absolute;
+    width: 180px;
+    left: 875px;
+    top: 30px;
+    height: 80px;
+}
+div#icone img{
+    width: 130px;
+    height: 80px;
+}
 header h1{
     display: block;
-    float: left;
-    color: rgba(151, 161, 165, 0.788);
+    position: absolute;
+    top: 25px;
+    left: 195px;
+    color: rgba(77, 197, 245, 0.788);
     font-family: 'Lemonada', cursive;
     font-size: 46px;
     padding: 15px;
@@ -81,9 +105,10 @@ article#conteudo h1{
     margin-right: 6px;
 }
 article#conteudo{
-    font-size: 14pt;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
+    letter-spacing: 2px;
+    font-size: 11pt;
+    font-family: 'Lemonada', cursive;
+    text-align: center;
 }
 div#galeria{
     position: relative;
@@ -93,7 +118,8 @@ div#galeria{
     text-align: center;
     margin-top: 10px;
     margin-left: -5px;
-    background-color: #d5d5d5;
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    overflow: hidden;
 }
 div.foto{
     display:  inline-block;
@@ -104,7 +130,7 @@ div.foto{
     height: 237px
 }
 div#galeria img:hover{
-    transform: scale(1.3);
+   	transform: scale(1.1);
 }
 div#galeria img{
     display: block;
@@ -113,6 +139,8 @@ div#galeria img{
     position: relative;
     width: 300px;
     height: 230px;
+    max-width: 100%;
+	transition: all 0.4s;
 }
 div#video{
     position: relative;
@@ -124,7 +152,7 @@ div#video{
     width: 100%px;
     height: 427px;
     box-shadow: 1px 1px rgba(0,0,0,.6);
-    background-color: #777;
+    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
 }
 iframe#tube{
     position: relative;
@@ -147,49 +175,10 @@ display: block;
 }
 div#dica h1{
     display: block;
-    font-family: 'Lemonada', cursive;;
+    font-family: 'Lemonada', cursive;
     text-align: center;
 }
-/* Style the tab buttons */
-.tablink {
-    background-color: #555;
-    color: white;
-    float: left;
-    font-family:'Lemonada', cursive;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    font-size: 14px;
-    width: 25%;
-    box-shadow: 0px 2px 3px rgba(0,0,0.6);
-  }
-  /* Change background color of buttons on hover */
-.tablink:hover {
-    background-color: #777;
-    text-decoration: underline;
-  }
-  
-  /* Set default styles for tab content */
-  .tabcontent {
-    font-family: 'Lemonada', cursive;
-    border: none;
-    font-size: 13pt;
-    color: rgba(106, 194, 34, 0.808);
-    font-weight: bolder;
-    display: none;
-    padding: 50px;
-    text-align: center;
-  }
-  .tabcontent h2{
-      text-shadow: 1px 1px 2px white;
-  }
-  
-  /* Style each tab content individually */
-  #London {background: url(../imagens/tabua_fundo.jpg) no-repeat;}
-  #Paris {background: url(../imagens/quadro_fundo.jpg) no-repeat;}
-  #Tokyo {background: url(../imagens/barber_fundo.jpg);}
-  #Oslo {background: url(../imagens/churras_fundo.jpg) no-repeat;}
+
 
   div#social{
       display: flex;
@@ -201,14 +190,51 @@ div#dica h1{
   }
   div#recados{
       position: absolute;
-      width:980px;
-      height: 830px;
+      width:979px;
+      height: 800px;
       top: 1140px;
-      background: linear-gradient(45deg, #777, #eee, #ddd);
+      background: linear-gradient(45deg, rgba(34,193,195,0.3) 0%, rgba(253,187,45,0.4) 100%);
   }
-  div#recados h1{
-      background-color: #ddd;
+  .accordion {
+    background-color: rgba(0, 0, 0,0.34);
+    color: #444;
+    cursor: pointer;
+    padding: 8px;
+    margin-top: 5px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.5s;
   }
+  .accordion h2{
+      font-family: 'Lemonada', cursive;
+      font-size: 15px;
+      width: 100%;
+      text-align: center;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc; 
+    text-decoration: underline;
+    color: #fff;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-weight: bold;
+    font-family: 'Lemonada', cursive;;
+    text-align: center;
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    display: none;
+    overflow: hidden;
+    
+  }
+  
   div#dicaa{
       display: block;
       position: relative;
@@ -308,62 +334,38 @@ div#dicae{
     margin: 15px 10px 15px 10px;
     padding: 12px;
     
+}
+div#social{
+    position: relative;
+    top: 1593px;
+    border: none;
+    height: 145px;
+    border: none;
+    padding: 20px;
+    margin: 30px auto;
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,.3) 100%);
     
 }
-footer#rodape{
-    position: absolute;
-    width: 980px;
-    top: 1100px;
-}
-
-footer#rodape p{
-    text-transform: uppercase;
-    font-size: 15px;
-    padding: 5px;
-    margin-top: 82px;
-    margin-right: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgba(0,0,0,.8);
-}
-  /*Redes Sociais*/
-  .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 20px;
-    top: 840px;
-    text-align: center;
-    text-decoration: none;
-    margin: 15px 8px;
-    border-radius: 50%;
-    margin-left: 30px;
-    margin-top: 25px;
-  }
-  
-  .fa:hover {
-      opacity: 0.7;
-      box-shadow: 5px 3px rgba(0,0,0.3);
-  }
-  
-  .fa-facebook {
-    background: rgba(0,0,0,0.6);
-    color: white;
-
-  }
-  
- .fa-google {
-    background: rgba(0,0,0,0.6);
-    color: white;
+div#social p {
+    text-shadow: 1px 1px rgba(0,0,0.3);
+    font-weight: bold;
+    font-family: 'Lemonada', cursive;
+    font-size: 17px;
+    padding: 0;
    
-  }
-  
- .fa-youtube {
-    background: rgba(0,0,0,0.6);
-    color: white;
-  }
-  
-  .fa-instagram {
-    background: rgba(0,0,0,0.6);
-    color: white;
-  }
-  
+}
+div#social img{
+    position: relative;
+    left: 150px;
+    top: 40px;
+    margin: 35px;
+    width: 45px;
+    height: 45px;
+    opacity: 0.5;
+}
+div#social img:hover{
+   opacity: 1;
+   transform: rotate(10deg);
+ 
+}
   

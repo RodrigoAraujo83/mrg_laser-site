@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <script src="javascript/funcoes.js"></script>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <style>
+        #home{
+           border-bottom: 2px solid rgba(0,0,0.2);
+    
+        }
+        </style>
     <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Home</title>
@@ -12,17 +19,21 @@
 <body>
 <div id="principal">
     <header id="cabecalho">
-        <h1><span>MRG</span> Arts <span>Nane</span>Laser</h1>
+        <h1>Arts Laser</h1>
+        <div id="logomarca">
+            <img src="imagens/logo2.png"  id= "marca" alt="logo alvo">
+        </div>
         <nav id="navegacao">    
             <h2>Menu Principal</h2>
             <ul>
-                <a href="index.html"><li>Home</li></a>
-                <a href="contatos.html"><li>Contatos</li></a>
-                <a href="sobre.html"><li>Sobre</li></a>
-               
-                
+                <a href="index.html"><li id="home" onmousemove="mudaFoto()" onmouseout="voltaFoto()">Home</li></a>
+                <a href="contatos.html"><li  onmousemove="mudaFotob()" onmouseout="voltaFotob()">Contatos</li></a>
+                <a href="sobre.html"><li  onmousemove="mudaFotoc()" onmouseout="voltaFotoc()">Sobre</li></a>
             </ul>
         </nav>
+        <div id="icone">
+            <img src="imagens/home.png"  id= "foto" alt="logo alvo">
+        </div>
     </header>
     <div id="video">
         <iframe  id="tube" width="953" height="425" src="https://www.youtube.com/embed/q4pRJlBQF0g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -30,8 +41,7 @@
     <article id="conteudo">
         <h1>Informações sobre Nossos Produtos</h1>
         <p>Num Misto de Arte e tecnologia, nós chegamos no mercado de arte e decoração unindo bom gosto e muito charme.
-        trata-se de peças de decoração e utencílios personalizados em mdf, acrílico, madeiras de lei e pead. Agregando luxo, funcionalidade e muito requinte todas as nossas peças.</p>
-        <p>Veja nas fotos ao lado, uma prévia de nosso produtos, além de ideias de onde e quando arrazar naquela mesa de frios, ou no seu cantinho do café, churrasco e muito mais.</p>
+        trata-se de peças de decoração e utencílios personalizados em mdf, acrílico, madeiras de lei e pead. Agregando luxo, funcionalidade e muito requinte todas as nossas peças. Veja nas fotos abaixo uma prévia de nosso produtos, além de ideias de onde e quando arrazar naquela mesa de frios, ou no seu cantinho do café, churrasco e muito mais.</p>
         <p>Pra Voce que precisa de peças decorativas no seu estabelecimento comercial, temos peças exclusivas além de muita ideia pra personalizar exatamente como voce imaginar.</p>
         <div id="galeria">
             <div class="foto"><img src="imagens/churrasco01.jpg" alt=""></div>
@@ -42,35 +52,44 @@
             <div class="foto"><img src="imagens/tabua01.jpg" alt=""></div>
         </div>
         <section id="itens">
-            <div  id="London" class="tabcontent">
-            <h2>Tábuas de Frios</h2>
-            <p>Que incrível essas tábuas de frios!<br>Pensamos em cada detalhe para que você pense apenas em receber bem suas visitas, ou impresionar seu amor num Happy Hour incrível preparado por você.
-            Temos uma linha completa para queijos e vinhos, totalmente personalizados de acordo com sua escolha. 
-            Não perca tempo e entre em contato pra mais Infromações.</p>
-            </div>
-
-            <div id="Paris" class="tabcontent">
-            <h2>Quadros com Gravação e Entalhe</h2>
-            <p>Com esses quadros sua cantinho do churrasco irá aparecer em todas as selfies nas redes sociais dos amigos e familiares. Um verdadeiro charme e requinte em cada detalhe.<br> 
-            Nossos quadros são confeccionados em maquina laser de alta precisão. trabalhamos com agilidade e qualidade por que gostamos e usamos o que fazemos.</p>
-            </div>
-
-
-            <div id="Tokyo" class="tabcontent">
-            <h2>Decoração para o seu estabeleciomento</h2> 
-            <p>Se você tem um negocio e quer um ambiente único e com muito charme, Então temos o que voce precisa. veja uma pequena coleção de quadros e Displays em acrílico e mdf que fazem da sua marca, um objeto de decoração. Com esses itens, seu estabelecimento irá se tornar um local mais alegre, leve e agradavél aos olhos de seus clientes.</p> 
-            </div>
-
-            <div id="Oslo" class="tabcontent">
-            <h2>Tábuas de Carne e Kit churrasco</h2>
-            <p>E pra galera do churrasco e cerveja, temos o que há de mais charmoso e de muito bom gosto. 
-            Belas tábuas de carne com temas a sua escolha, temas do seu time do coração, com nomes, figuras, e muito mais. Bases para copos de cerveja, petisqueiras dos mais variados temas, abridores de garrafas de parede pra tirar aquela onda no seu cantinho do churrasco.</p>
-            </div>
-            <button class="tablink" onclick="openCity('London', this, 'gray')" id="defaultOpen">Queijos e Vinhos</button>
-            <button class="tablink" onclick="openCity('Paris', this, 'gray')">Quadros e Decorações</button>
-            <button class="tablink" onclick="openCity('Tokyo', this, 'gray')">Acessorios Comerciais</button>
-            <button class="tablink" onclick="openCity('Oslo', this, 'gray')">Itens para Churrasco</button>
-        </section>
+                 <h1>Nossos Produtos</h1>
+                <button class="accordion"><h2>Tábuas de Frios</h2></button>
+                <div class="panel">
+                    <p>Que incrível essas tábuas de frios!<br>Pensamos em cada detalhe para que você pense apenas em receber bem suas visitas, ou impresionar seu amor num Happy Hour incrível preparado por você.
+                    emos uma linha completa para queijos e vinhos, totalmente personalizados de acordo com sua escolha. 
+                    Não perca tempo e entre em contato pra mais Infromações.</p>
+                </div>
+                <button class="accordion"><h2>Quadros com Gravação e Entalhe</h2></button>
+                <div class="panel">
+                    <p>Com esses quadros seu cantinho do churrasco irá aparecer em todas as selfies nas redes sociais dos amigos e familiares. Um verdadeiro charme e requinte em cada detalhe.<br> 
+                    Nossos quadros são confeccionados em maquina laser de alta precisão. trabalhamos com agilidade e qualidade por que gostamos e usamos o que fazemos.</p>
+                </div>
+                <button class="accordion"><h2>Decoração para o seu estabeleciomento</h2></button>
+                <div class="panel">
+                    <p>Se você tem um negocio e quer um ambiente único e com muito charme, Então temos o que voce precisa. veja uma pequena coleção de quadros e Displays em acrílico e mdf que fazem da sua marca, um objeto de decoração. Com esses itens, seu estabelecimento irá se tornar um local mais alegre, leve e agradavél aos olhos de seus clientes.</p>
+                </div>
+                <button class="accordion"> <h2>Tábuas de Carne e Kit churrasco</h2></button>
+                <div class="panel">
+                    <p>E pra galera do churrasco e cerveja, temos o que há de mais charmoso e de muito bom gosto. 
+                    Belas tábuas de carne com temas a sua escolha, temas do seu time do coração, com nomes, figuras, e muito mais. Bases para copos de cerveja, petisqueiras dos mais variados temas, abridores de garrafas de parede pra tirar aquela onda no seu cantinho do churrasco.</p>
+                </div>
+                <script>
+                    var acc = document.getElementsByClassName("accordion");
+                    var i;
+                    
+                    for (i = 0; i < acc.length; i++) {
+                    acc[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var panel = this.nextElementSibling;
+                        if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                        } else {
+                        panel.style.display = "block";
+                        }
+                    });
+                    }
+                </script>
+            </section>
                 <div id="recados">
                     <h1>Dicas Semanais da Nany para sua decoração</h1>
                     <div id="dicaa">
@@ -97,11 +116,11 @@
     </article>
     <footer id="rodape">
     <div id="social">
-        <a href="#" class="fa fa-instagram"></a>
-        <a href="#" class="fa fa-youtube"></a>
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-google"></a>
         <p>&copy; 2020 <em>Todos Os direitos resevados</em></p>
+        <a href="#" class="instagram"><img src="imagens/instagram.png" alt=" logo instagaram"></a>
+        <a href="#" class="youtube"><img src="imagens/youtube.png" alt="logo youtube"></a>
+        <a href="#" class="facebook"><img src="imagens/facebook.png" alt="logo gacebook"></a>
+        <a href="#" class="github"> <img src="imagens/gato.png" alt="logo github"> </a>
     </div> 
     </footer>
 

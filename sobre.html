@@ -3,34 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <script src="javascript/funcoes.js"></script>
+    <script>
+        function mudaFotoc(){
+            document.getElementById('foto').src="imagens/logo2.png"
+        }
+        function voltaFotoc(){
+            document.getElementById('foto').src="imagens/sobre.png"
+        }
+    </script>
+    <style>
+    #sobre{
+       border-bottom: 2px solid rgba(0,0,0.2);
+    }
+    </style>
     <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Sobre Nós</title>
 </head>
 <body>
 <div id="principal">
     <header id="cabecalho">
-    <h1><span>MRG</span> Arts <span>Nane</span>Laser</h1>
-    <nav id="navegacao">    
-    <h2>Menu Principal</h2>
-    <ul>
-    <a href="index.html"><li>Home</li></a>
-    <a href="contatos.html"><li>Contatos</li></a>
-    <a href="sobre.html"><li>Sobre</li></a>
-    
-    </ul>
-</nav>
-</header>
+        <h1>Arts Laser</h1>
+        <div id="logomarca">
+            <img src="imagens/logo2.png"  id= "marca" alt="logo alvo">
+        </div>
+        <nav id="navegacao">    
+            <h2>Menu Principal</h2>
+            <ul>
+                <a href="index.html"><li onmousemove="mudaFoto()" onmouseout="voltaFoto()">Home</li></a>
+                <a href="contatos.html"><li  onmousemove="mudaFotob()" onmouseout="voltaFotob()">Contatos</li></a>
+                <a href="sobre.html"><li  id="sobre"  onmousemove="mudaFotoc()" onmouseout="voltaFotoc()">Sobre</li></a>
+            </ul>
+        </nav>
+        <div id="icone">
+            <img src="imagens/sobre.png"  id= "foto" alt="logo alvo">
+        </div>
+    </header>
 
-<footer id="rodape">
-    <a href="#" class="fa fa-instagram"></a>
-    <a href="#" class="fa fa-youtube"></a>
-    <a href="#" class="fa fa-facebook"></a>
-    <a href="#" class="fa fa-google"></a>
-    <p>&copy; 2020 <em>Todos Os direitos resevados</em></p>
- </footer>
+    <footer id="rodape">
+        <div id="social">
+            <p>&copy; 2020 <em>Todos Os direitos resevados</em></p>
+            <a href="#" class="instagram"><img src="imagens/instagram.png" alt=" logo instagaram"></a>
+            <a href="#" class="youtube"><img src="imagens/youtube.png" alt="logo youtube"></a>
+            <a href="#" class="facebook"><img src="imagens/facebook.png" alt="logo gacebook"></a>
+            <a href="#" class="github"> <img src="imagens/gato.png" alt="logo github"> </a>
+        </div> 
+        </footer>
 
 </div>
 </body>

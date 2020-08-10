@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+main#tudo{
+    position: absolute;
+    width: 982px;
+    height: 1500px;
+    box-shadow: rgba(0,0,0.3);
+}
+div#cont{
+    text-align: center;
+    position: relative;
+    width: 85%;
+    height: 900px;
+    box-shadow: 2px 2px 3px rgba(0,0,0.3);
+    background: linear-gradient(180deg, rgba(34,193,195,0.30015756302521013) 22%, rgba(180,191,191,1) 72%);
+    margin: 50px auto;
+    border-radius: 4%;
+    
+
+}
+fieldset{
+    width: 50%;
+    height: 180px;
+    margin: 15px auto;
+    box-shadow: 2px 2px 4px #ddd;
+    border: 1px solid #eee;
+}
+#contato{
+    height: 270px;
+}
+fieldset#contato P{
+    font-size: 20px;
+    margin: 8px;
+    text-align: left;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+fieldset#contato legend{
+    margin-left: 25px;
+    font-family: 'Lemonada', cursive;
+    text-align: left;
+    font-size: 23px;
+    font-weight: bold;
+    color: #fff;
+}
+#genero{
+    height: 115px;
+}
+fieldset#genero{
+    font-size: 20px;
+    margin: 8px;
+    text-align: left;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+fieldset#genero label{
+    position: relative;
+    top: -20px;
+    text-align: left;
+    font-size: 16px;
+    
+}
+fieldset#local p{
+    font-size: 20px;
+    margin: 8px;
+    text-align: left;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input.endereco{
+    
+    width: 270px;
+    height: 18px;
+    float: right;
+}
+input.endereco:hover{
+    background-color: #eee;
+}
+fieldset#local legend{
+    margin-left: 25px;
+    font-family: 'Lemonada', cursive;
+    text-align: left;
+    font-size: 23px;
+    font-weight: bold;
+    color: #fff;
+}
+#mensagem{
+    width: 500px;
+    height: 250px;
+}
+fieldset#mensagem legend{
+    margin-left: 25px;
+    font-family: 'Lemonada', cursive;
+    text-align: left;
+    font-size: 23px;
+    font-weight: bold;
+    color: #fff;
+}
+fieldset#mensagem p{
+    font-size: 20px;
+    margin: 8px;
+    text-align: left;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ok{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #000;
+    text-shadow: 1px 1px 2px lightblue;
+    margin: 10px;
+    width: 100px;
+    height: 48px;
+    border: none;
+    background: linear-gradient(180deg, rgba(133,204,221,0.30015756302521013) 22%, rgba(65,135,231,1) 83%);
+
+}
+.ok:hover{
+    opacity: 0.6;
+    border: 2px solid grey;
+}
+div#more{
+    position: absolute;
+    top: 1190px;
+    text-align: center;
+    margin: 20px 75px;
+    width: 85%;
+    height: 700px;
+    box-shadow: 2px 2px 3px rgba(0,0,0.3);
+    background: linear-gradient(180deg, rgba(34,193,195,0.30015756302521013) 22%, rgba(180,191,191,1) 72%);
+    border:  1px solid black;
+    border-radius: 4%;
+}
+footer#rodape{
+    position: absolute;
+    width: 982px;
+    left: 0px;
+    top:292px ;
+}
+div#mainport{
+    position: relative;
+    width: 100%;
+    height: 460px;
+    border: 2px solid #d3d3d3;
+    margin-top: 45px;
+}
+div#txtport1{
+    margin-left: 400px;
+    width: 50%;
+    height: 200px;
+}
