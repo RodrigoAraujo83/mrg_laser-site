@@ -83,6 +83,15 @@ li:hover{
     border-radius: 20%;
     color: #eee;
 }
+li:active{
+    background-color: #fff;
+    color: #444;
+}
+li:focus{
+    background-color: #777;
+    color: #ccc;
+    box-shadow: 3px 3px rgba(0,0,0.6);
+}
 article#conteudo{
     padding: 3px;
     position: relative;
@@ -130,8 +139,9 @@ div.foto{
     height: 237px
 }
 div#galeria img:hover{
-   	transform: scale(1.1);
-}
+       transform: scale(1.1);
+}      
+
 div#galeria img{
     display: block;
     margin: 0;
